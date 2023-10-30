@@ -122,36 +122,50 @@
           <hr>
           <legend class="form-group">Number Of Adults / Children</legend>
 
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="adultRadio" id="1Adult">
-            <label class="form-check-label" for="1Adult">1 Adult</label>
-          </div>
+          <div class="form-group">
+            <label for="numberOfAdults" class="form-label">Number of Adults</label>
+            <select class="form-select" id="numberOfAdults">
+              <option>1 Adult</option>
+              <option>2 Adults</option>
+              <option>3 Adults</option>
+              <option>4 Adults</option>
+            </select>
 
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="adultRadio" id="2Adults">
-            <label class="form-check-label" for="2Adults">2 Adults</label>
-          </div>
+            <div class="form-group">
+              <label for="numberOfChildren" class="form-label">Number of Children</label>
+              <select class="form-select" id="numberOfChildren">
+                <option>None</option>
+                <option>1 Child</option>
+                <option>2 Children</option>
+                <option>3 Children</option>
+                <option>4 Children</option>
+              </select>
 
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="adultRadio" id="3Adults">
-            <label class="form-check-label" for="3Adults">3 Adults</label>
-          </div>
+            <hr>
 
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="adultRadio" id="4Adults">
-            <label class="form-check-label" for="4Adults">4 Adults</label>
-          </div>
+            <legend class="form-group">Discounts</legend>
 
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="discountRadio" id="noneRadio">
+              <label class="form-check-label" for="noneRadio">None</label>
+            </div>
 
-        </fieldset>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="discountRadio" id="seniorRadio">
+              <label class="form-check-label" for="seniorRadio">AAA/Senior (10%)</label>
+            </div>
 
-        
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="discountRadio" id="militaryRadio">
+              <label class="form-check-label" for="militaryRadio">Military (20%)</label>
+            </div>
 
+            <hr>
 
+            <button class="btn btn-secondary" id="totalCost">Cost Total</button>
+   </fieldset>
+ </section>
 
-     
-
-      </section>
     </main>
   </body>
 </html>
