@@ -3,14 +3,23 @@
 function init () {
     const totalCost = document.getElementById("totalCost");
 
-    totalCost.onsubmit = getTotalCost; 
+    totalCost.onsubmit = TotalCost; 
 }
 
-function totalCost(event) {
+function TotalCost() {
+
     
-    let fullName = document.getElementById("fullNameInput");
-    let email = document.getElementById("emailInput");
-    let phoneNumber = document.getElementById("phoneNumberInput");
-    let checkInDate = document.getElementById("")
+    let fullName = document.getElementById("fullNameInput").value.trim();
+    let email = document.getElementById("emailInput").value.trim();
+    let phoneNumber = document.getElementById("phoneNumberInput").value.trim();
+    let checkInDate = document.getElementById("checkInDateInput").value.trim();
+    let numberOfNights = document.getElementById("numberOfNightsSelect").value.trim();
 
+
+    console.log("full name " + fullName)
+    console.log("Email " + email)
+    console.log("Phone Number " + phoneNumber)
+    console.log("Check-In Date " + checkInDate)
+    console.log("Number of Nights " + numberOfNights)
 }
+
