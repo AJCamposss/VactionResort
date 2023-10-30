@@ -12,7 +12,10 @@
       crossorigin="anonymous"
     />
 
-    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet"/>
+
+    <script href="scripts/cost.js"></script>
+
   </head>
   <body>
     <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
@@ -60,6 +63,12 @@
             <input type="email" class="form-control" id="emailInput" aria-describedby="emailHelp"
                 placeholder="Enter email">
         </div>
+
+        <div class="form-group">
+          <label for="phoneNumberInput" class="form-label">Phone Number</label>
+          <input type="phone number" class="form-control" id="phoneNumberInput" aria-describedby="phoneNumberHelp"
+              placeholder="Enter phone number">
+      </div>
 
         <div class="form-group">
             <label for="orderDateInput" class="form-label">Check-in Date</label>
@@ -167,5 +176,7 @@
  </section>
 
     </main>
+
+  
   </body>
 </html>
